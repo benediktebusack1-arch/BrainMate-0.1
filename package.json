@@ -1,0 +1,34 @@
+{
+  "name": "BrainMate-0.1",
+  "lockfileVersion": 3,
+  "type": "module",
+  "description": "BrainMate - Level up i livet, én rutine ad gangen",
+  "main": "backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "nodemon backend/index.js",
+    "prod-server": "node backend/index.js",
+    "create-db": "node db/createDb.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benediktebusack1-arch/BrainMate-0.1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benediktebusack1-arch/BrainMate-0.1.git"
+  },
+  "homepage": "https://github.com/benediktebusack1-arch/BrainMate-0.1.git",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "17.2.3",
+    "express": "^5.1.0",
+    "pg": "8.16.3",
+    "pg-upload": "0.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.10"
+  }
+}
