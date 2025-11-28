@@ -1,5 +1,39 @@
+.div-logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.namesettings-hp {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgb(228, 162, 127);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.slogan-hp {
+    font-size: large;
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(228, 162, 127);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .logosettings {
-    width: auto;
+    width: 110px;
     height: auto;
-    margin-top: auto;
+    margin-top: 20px;
+}
+
+body {
+    background-color: rgba(8, 10, 121, 0.923);
+}
+
+.password {
+    width: 50%;
+    margin: 20 px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
