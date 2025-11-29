@@ -1,41 +1,136 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <title>BrainMate</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
 
-                                                <!-- Logo -->
+<!-- Login knap -->
+<button id="openLogin">Login</button>
 
-    <div class="div-logo"><img id="logo" class="logosettings" src="images/transperantlogo.png" alt="BrainMate Logo"></div>
-    
-                                                <!-- name + slogan -->
-        
-        <div>
-            <h1 class="namesettings-hp">BrainMate</h1>
-            <p class="slogan-hp">Level up in life, one routine at a time</p>
+<!-- Modal (popup) -->
+<div id="loginPopup" class="modal">
+
+    <div class="modal-content animate">
+
+        <!-- Luk kryds -->
+        <span class="close">&times;</span>
+
+        <!-- Logo + name + slogan -->
+        <div class="logo-box">
+            <img src="images/login-foto.png" alt="BrainMate Logo" class="logo-image">
         </div>
+
+        <!-- Formular -->
+        <form action="action_page.php">
+            <div class="container">
+
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Username" name="username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Password" name="password" required>
+
+                <button type="submit">Login</button>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container footer">
+                <button type="button" class="cancelBtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!--
+    <!DOCTYPE html>
+    <html lang="da">
+        <head>
+            <link rel="stylesheet" href="stylesheet.css">
+            <meta charset="UTF-8">
+            <title>BrainMate</title>
+        </head>
         
-        <form action="action_page.php" method="post">
+        <body>
+             --> 
             
-                                                <!-- name + slogan -->
-
-        <div class="imgcontainer">
-            <img src="login-foto.png" alt="Slogan" class="sloganlogin">
-        </div>
-
-                                                <!-- login form -->
+            <!-- Logo  
+            
+            <div class="div-logo"><img id="logo" class="logosettings" src="images/transperantlogo.png" alt="BrainMate Logo"></div>
+            
+            <div>
+                <h1 class="namesettings-hp">BrainMate</h1>
+                <p class="slogan-hp">Level up in life, one routine at a time</p>
+            </div>
+            
+            <form action="action_page.php" method="post">
+            -->
+            
+            <!-- name + slogan 
+            
+            <div class="imgcontainer">
+                <img src="images/login-foto.png" alt="Slogan" class="sloganlogin">
+            </div>
+            
+        -->
+         <!--
+        <button onclick="document.getElementById('loginPopup').style.display='block'">Login</button>
+        
+        <div id="loginPopup" class="loginPopup">
+            <span onclick="document.getElementById('loginPopup').style.display='none'" 
+            class="close" title="Close Modal">&times;</span>
+            
+            <form class="modal-content animate" action="action_page.php">
+                
+                <div class="imgcontainer"></div>
+                <img src="images/login-foto.png" alt="BrainMate Logo" class="img.login-foto">
+            </div>
+            
+            <div class="container">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Username" name="username" required>
+                
+                <label for="password"><b>Password</b></label>
+                <input class="password" type="password" placeholder="Password" name="password" required>
+                
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+            </div>
+            
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('loginPopup')" 
+                class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        
+        
+        
+        -->
+        
+        <!-- login form 
         
         <div class="container">
             
             <input id="username" type="text" placeholder="Username" name="username" required>
-
+            
             <input id="password" type="password" placeholder="Password" name="password" required>
-
+            
             <button type="submit">Login</button>
-
+            
             <label class="rememberme">
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
@@ -45,7 +140,6 @@
             <span class="psw">Forgot <a href="#">Password</a></span>
         </div>
     </form>
+     --> 
+    
 
-    <script src="script.js"></script>
-</body>
-</html>
