@@ -28,6 +28,7 @@ modal.addEventListener("click", (event) => {
 const modal2 = document.getElementById("signupPopup");
 const openBtn2 = document.getElementById("openSignUp");
 
+
 // Åbn
 openBtn2.addEventListener("click", () => {
     modal2.style.display = "block";
@@ -42,9 +43,17 @@ if (closeBtn) closeBtn.addEventListener("click", () => {
 modal2.addEventListener("click", (event) => {
     // hvis klik IKKE er inde i .modal-content => luk
     if (!event.target.closest(".modal-content")) {
-        modal.style.display = "none";
+        modal2.style.display = "none";
     }
 });
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
 // ESC tast luk
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") modal.style.display = "none";
