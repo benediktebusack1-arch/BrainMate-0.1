@@ -129,6 +129,7 @@ button:hover {
 }
 
 /* BrainMate css */
+
 .namesettings {
     color: rgb(233, 66, 119);
     text-align: center;
@@ -136,7 +137,9 @@ button:hover {
     margin-top: 0px;
     margin-bottom: 3px;
 }
+
 /* slogan på login siden */
+
 .slogan {
     color: rgb(0, 153, 255);
     text-align: center;
@@ -145,6 +148,7 @@ button:hover {
 }
 
 /* remember me text */
+
 .rememberme {
     display: flex;
     align-items: auto;
@@ -204,7 +208,9 @@ button:hover {
 }
 
 * {box-sizing: border-box}
+
 /* Full-width input fields */
+
   input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -215,12 +221,14 @@ button:hover {
 }
 
 /* Add a background color when the inputs get focus */
+
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 
 /* Style the horizontal ruler */
+
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
@@ -263,6 +271,8 @@ hr {
     line-height: 1.5;
     border: 1px solid rgba(255,255,255,0.25);
 }
+
+/* dansende effekt på logo */
 
 .logobounce {
     animation: dance 2.5s ease-in-out infinite;
