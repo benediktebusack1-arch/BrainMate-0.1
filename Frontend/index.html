@@ -18,7 +18,7 @@
     </div>
 
 <!-- Login knap -->
-<button id="openLogin">Login</button>
+<button class="loginbtn1" id="openLogin">Login</button>
 
 <!-- Modal (popup) -->
 <div id="loginPopup" class="modal">
@@ -35,23 +35,29 @@
 
         <!-- Formular -->
         <form action="action_page.php">
-            <div class="container">
+            <div class="containersimpel">
 
-                <label><b>Username</b></label>
-                <input type="text" placeholder="Username" name="username" required>
+                <label><b style="color: rgb(228, 162, 127);">Username</b></label>
+                <input type="text" placeholder="Enter your username" name="username" required>
 
-                <label><b>Password</b></label>
-                <input type="password" placeholder="Password" name="password" required>
-
-                <button type="submit">Login</button>
-
-                <label>
+                <label><b style="color: rgb(228, 162, 127);">Password</b></label>
+                <input type="password" placeholder="Enter password" name="password" required>
+                
+            </div>
+            
+            
+            <div class="login-row">
+                
+                <label class="rememberme">
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
+                
+                <button class="loginbtnmodal" type="submit">Login</button>
             </div>
+            
 
             <div class="container footer">
-                <span class="psw">Forgot <a href="#">password?</a></span>
+                <span class="psw" style="color: rgb(228, 162, 127)">Forgot <a style="color: rgb(228, 162, 127)" href="#">password?</a></span>
             </div>
         </form>
 

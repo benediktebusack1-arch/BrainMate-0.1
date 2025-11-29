@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* === Modal baggrund === */
+/* Modal baggrund */
 .modal {
     display: none; 
     position: fixed;
@@ -13,7 +13,7 @@ body {
     overflow: auto;
 }
 
-/* === Popup box === */
+/* Popup box */
 .modal-content {
     background-color: rgba(8, 10, 121, 0.923);
     margin: 5% auto;
@@ -24,7 +24,7 @@ body {
     padding-bottom: 20px;
 }
 
-/* === Luk knap === */
+/* Luk knap */
 .close {
     float: right;
     font-size: 30px;
@@ -33,13 +33,13 @@ body {
     padding: 10px;
 }
 
-/* === Logo container === */
+/* Logo container */
 .logo-box {
     text-align: center;
     padding: 20px 10px;
 }
 
-/* === Logo billede === */
+/* Logo billede */
 .logo-image {
     width: 70%;
     max-width: 450px;
@@ -47,7 +47,7 @@ body {
     margin: auto;
 }
 
-/* === Input === */
+/* Input */
 input[type=text],
 input[type=password] {
     width: 100%;
@@ -58,16 +58,18 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-/* === Container === */
+/* Container */
 .container {
-    padding: 15px 25px;
+    padding: 10px 15px;
+    font-size: small;
+    text-align: center;
 }
 
 .footer {
-    background: rgba(210, 25, 25, 0.15);
+    background: rgba(102, 74, 255, 0.82);
 }
 
-/* === Knapper === */
+/* Knapper */
 button {
     background: rgb(228, 162, 127);
     color: white;
@@ -89,6 +91,14 @@ button:hover {
     animation: scaleIn .4s ease;
 }
 
+.loginbtnmodal {
+    height: fit-content;
+    width: 140px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @keyframes scaleIn {
     from {
         transform: scale(0.7);
@@ -100,16 +110,21 @@ button:hover {
     }
 }
 
+/* gør div elementet til en block */
+
 .div-logo { 
     display: block;
     margin: auto;
     width: fit-content;
 }
 
+/* Logo på login siden */
+
 .logosettings {
     height: 100px;
 }
 
+/* BrainMate css */
 .namesettings {
     color: rgb(228, 162, 127);
     text-align: center;
@@ -117,7 +132,7 @@ button:hover {
     margin-top: 0px;
     margin-bottom: 3px;
 }
-
+/* slogan på login siden */
 .slogan {
     color: rgb(228, 162, 127);
     text-align: center;
@@ -125,4 +140,50 @@ button:hover {
     margin-top: 2px;
 }
 
+/* remember me text */
+.rememberme {
+    display: flex;
+    align-items: auto;
+    gap: 6px;
+    color: rgb(137, 194, 244);
+    font-size: small;
+}
 
+
+.checkbox {
+    display: block;
+    width: 100%;
+}
+
+.login-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    padding-left: 12px;
+    padding-right: 15px;
+    margin: 8px 0;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    
+}
+
+.containersimpel {
+    padding: 10px 15px;
+}
+
+/* den første login knap */
+
+.loginbtn1 {
+    
+    display: block;
+    width: 30%;
+    padding: 12px;
+    margin: auto;
+    margin-top: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    align-items: auto;
+    font-size: medium;
+}
