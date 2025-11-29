@@ -4,24 +4,34 @@ const modal = document.getElementById("loginPopup");
 const openBtn = document.getElementById("openLogin");
 const closeBtn = document.querySelector(".close");
 const cancelBtn = document.querySelector(".cancelbtn");
+const modalContent = modal.querySelector(".modal-content");
 
 // Åbn
-openBtn.onclick = () => {
+openBtn.addEventListener("click", () => {
     modal.style.display = "block";
-}
+});
 
 // Luk (kryds)
-closeBtn.onclick = () => {
+if (closeBtn) closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
-}
+});
 
 // Cancel knap
-cancelBtn.onclick = () => {
+if (cancelBtn) cancelBtn.addEventListener("click", () => {
     modal.style.display = "none";
-    modal.querySelector("form").reset();
-}
+    const form = modal.querySelector("form");
+    if (form) form.reset();
+});
 
-// Luk ved klik udenfor
-window.onclick = e => {
-    if (e.target === modal) modal.style.display = "none";
-}
+// Luk ved klik udenfor — lyt kun på modal (overlay)
+modal.addEventListener("click", (event) => {
+    // hvis klik IKKE er inde i .modal-content => luk
+    if (!event.target.closest(".modal-content")) {
+        modal.style.display = "none";
+    }
+});
+
+// ESC tast luk
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") modal.style.display = "none";
+});

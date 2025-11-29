@@ -64,12 +64,12 @@ input[type=password] {
 }
 
 .footer {
-    background: rgba(255,255,255,0.15);
+    background: rgba(210, 25, 25, 0.15);
 }
 
 /* === Knapper === */
 button {
-    background: #e08d53;
+    background: rgb(228, 162, 127);
     color: white;
     border: none;
     padding: 10px;
@@ -82,7 +82,7 @@ button:hover {
 }
 
 .cancelbtn {
-    background: red;
+    background: rgb(134, 130, 130);
 }
 
 .animate {
