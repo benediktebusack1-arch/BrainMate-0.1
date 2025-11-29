@@ -1,9 +1,11 @@
 console.log("Login modal script loaded");
 console.log("Signin modal script loaded");
 
+// login modal (pop-up)
+
 const modal = document.getElementById("loginPopup");
 const openBtn = document.getElementById("openLogin");
-const closeBtn = document.querySelector(".close");
+const closeLogin = document.querySelector("#loginPopup .close");
 const cancelBtn = document.querySelector(".cancelbtn");
 const modalContent = modal.querySelector(".modal-content");
 
@@ -13,7 +15,7 @@ openBtn.addEventListener("click", () => {
 });
 
 // Luk (kryds)
-if (closeBtn) closeBtn.addEventListener("click", () => {
+if (closeLogin) closeLogin.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
@@ -25,9 +27,11 @@ modal.addEventListener("click", (event) => {
     }
 });
 
+// Opret bruger modal (pop-up)
+
 const modal2 = document.getElementById("signupPopup");
 const openBtn2 = document.getElementById("openSignUp");
-
+const closeSignup = document.querySelector("#signupPopup .close");
 
 // Åbn
 openBtn2.addEventListener("click", () => {
@@ -35,7 +39,7 @@ openBtn2.addEventListener("click", () => {
 });
 
 // Luk (kryds)
-if (closeBtn) closeBtn.addEventListener("click", () => {
+if (closeSignup) closeSignup.addEventListener("click", () => {
     modal2.style.display = "none";
 });
 

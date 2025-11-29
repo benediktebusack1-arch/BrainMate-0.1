@@ -39,6 +39,8 @@ body {
 .logo-box {
     text-align: center;
     padding: 20px 10px;
+    display: block;
+    margin-top: 20px;
 }
 
 /* Logo billede */
@@ -222,6 +224,8 @@ input[type=text]:focus, input[type=password]:focus {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  margin-top: 25px;
+  
 }
 
 .signUp {
@@ -241,3 +245,44 @@ hr {
     text-align: left;
 }
 
+.info-box {
+    max-width: 550px;      
+    margin: 20px auto;     
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px);           
+    -webkit-backdrop-filter: blur(10px);   
+
+    color: rgb(228, 162, 127); 
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.logobounce {
+    animation: dance 2.5s ease-in-out infinite;
+}
+
+@keyframes dance {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-6px) rotate(-1deg); }
+    50%  { transform: translateX(6px) rotate(1deg); }
+    75%  { transform: translateX(-6px) rotate(-1deg); }
+    100% { transform: translateX(0); }
+}
+
+.remembercreate {
+    color: rgb(137, 194, 244);
+    text-align: left;
+}
+
+.gæstebruger {
+    background-color: rgb(228, 162, 127);
+    margin-top: 10px;
+    font-weight: bold;
+}
