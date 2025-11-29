@@ -100,3 +100,29 @@ button:hover {
     }
 }
 
+.div-logo { 
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.logosettings {
+    height: 100px;
+}
+
+.namesettings {
+    color: rgb(228, 162, 127);
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.slogan {
+    color: rgb(228, 162, 127);
+    text-align: center;
+    font-size: medium;
+    margin-top: 2px;
+}
+
+

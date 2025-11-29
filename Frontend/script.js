@@ -16,13 +16,6 @@ if (closeBtn) closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// Cancel knap
-if (cancelBtn) cancelBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    const form = modal.querySelector("form");
-    if (form) form.reset();
-});
-
 // Luk ved klik udenfor — lyt kun på modal (overlay)
 modal.addEventListener("click", (event) => {
     // hvis klik IKKE er inde i .modal-content => luk
