@@ -7,23 +7,44 @@
 </head>
 <body>
 
-        <!-- Logo -->
+                                                <!-- Logo -->
 
     <div class="div-logo"><img id="logo" class="logosettings" src="images/transperantlogo.png" alt="BrainMate Logo"></div>
     
-        <!-- name + slogan -->
+                                                <!-- name + slogan -->
+        
+        <div>
+            <h1 class="namesettings-hp">BrainMate</h1>
+            <p class="slogan-hp">Level up in life, one routine at a time</p>
+        </div>
+        
+        <form action="action_page.php" method="post">
+            
+                                                <!-- name + slogan -->
 
-    <div>
-        <h1 class="namesettings-hp">BrainMate</h1>
-        <p class="slogan-hp">Level up in life, one routine at a time</p>
-    </div>
+        <div class="imgcontainer">
+            <img src="login-foto.png" alt="Slogan" class="sloganlogin">
+        </div>
 
-    <div>
-        <input id="username" type="text" placeholder="Username">
-    </div>
-    <div>
-        <input class="password" id="password" type="password" placeholder="Password">
-    </div>
+                                                <!-- login form -->
+        
+        <div class="container">
+            
+            <input id="username" type="text" placeholder="Username" name="username" required>
+
+            <input id="password" type="password" placeholder="Password" name="password" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        
+        <div>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">Password</a></span>
+        </div>
+    </form>
 
     <script src="script.js"></script>
 </body>
