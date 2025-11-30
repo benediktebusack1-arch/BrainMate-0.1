@@ -2,20 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <title>BrainMate</title>
-    <link rel="stylesheet" href="styles/energiniveau.css">
+    <title>BrainMate</title>
+    <link rel="stylesheet" href="energiniveau.css">
 </head>
 
 <body>
 
-        <!-- Logo, navn og slogan -->
-
-<div class="div-logo"><img id="logo" class="logosettings logobounce" src="images/transperantlogo.png" alt="BrainMate Logo"></div>
+    <!-- Logo, navn og slogan -->
+    <div class="div-logo">
+        <img id="logo" class="logosettings logobounce" src="images/transperantlogo.png" alt="BrainMate Logo">
+    </div>
             
     <div>
-        <h1 class="namesettings">Hvordan føler du dig i dag?</h1>
-        <p class="slogan">Vælg dit energiniveau, så tilpasser vi appen til dig</p>
+        <h1 class="namesettings">How do you feel today?</h1>
+        <p class="slogan">Choose your energy level, and we will customize the app for you</p>
     </div>
-    
+
+    <div class="energy-grid">
+        <button id="lav" class="image-btn" type="button">Low
+            <img src="images/lowbattery.png" alt="Battery" width="200px">
+        </button>
+        <button id="medium" class="image-btn" type="button">Medium
+            <img src="images/lyn.png" alt="Lightning" width="200px">
+        </button>
+        <button id="høj" class="image-btn" type="button">High
+            <img src="images/lyn.png" alt="Lightning" width="200px">
+        </button>
+        <button id="overstimuleret" class="image-btn" type="button">Overstimulated
+            <img src="images/emergency.png" alt="Overstimulated" width="200px">
+        </button>
+    </div>
+
+    <div>
+        <button class="fortsætknap" id="fortsætknap" type="button">Fortsæt ➜</button>
+    </div>
+
+    <script src="JS/energi.js"></script>
 </body>
 </html>
