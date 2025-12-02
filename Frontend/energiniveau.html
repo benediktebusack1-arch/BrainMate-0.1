@@ -15,28 +15,16 @@
             
     <div>
         <h1 class="namesettings">How do you feel today?</h1>
-        <p class="slogan">Choose your energy level, and we will customize the app for you</p>
+        <p id="question" class="slogan">Choose your energy level, and we will customize the app for you</p>
     </div>
 
-    <div class="energy-grid">
-        <button id="lav" class="image-btn" type="button">Low
-            <img src="images/lowbattery.png" alt="Battery" width="200px">
-        </button>
-        <button id="medium" class="image-btn" type="button">Medium
-            <img src="images/lyn.png" alt="Lightning" width="200px">
-        </button>
-        <button id="høj" class="image-btn" type="button">High
-            <img src="images/lyn.png" alt="Lightning" width="200px">
-        </button>
-        <button id="overstimuleret" class="image-btn" type="button">Overstimulated
-            <img src="images/emergency.png" alt="Overstimulated" width="200px">
-        </button>
-    </div>
+    <div id ="answers"></div>
 
     <div>
-        <button class="fortsætknap" id="fortsætknap" type="button"><a href="homepage.html">Continue ➜</button>
+        <button class="fortsætknap" id="nextBtn" type="button">Continue ➜</button>
     </div>
+  
 
-    <script src="JS/energi.js"></script>
+    <script src="energiniveau.js"></script>
 </body>
 </html>

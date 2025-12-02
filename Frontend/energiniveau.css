@@ -62,7 +62,7 @@ button:active {
 }
 
 .energy-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr); 
     gap: 1rem; 
     width: 100%; 
@@ -70,6 +70,8 @@ button:active {
     margin: 0 auto;
     margin-top: 50px;
     align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .energy-card {
@@ -85,7 +87,7 @@ button:active {
 }
 
 .btn:hover {
-  background-color: rgb(228, 162, 127);
+  background-color: rgb(0, 153, 255);
 }
 
 .btn.active {
@@ -93,7 +95,7 @@ button:active {
 }
 
 .image-btn{
-    background: rgb(0, 153, 255);
+    background: rgb(228, 162, 127);
     border-radius: 14px;
     padding: 30px;
     font-size: 18px;
@@ -108,6 +110,42 @@ button:active {
 }
 
 .fortsætknap { 
-    background: rgb(233, 66, 119);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(0, 153, 255);
+    font-size: medium;
 }
+
+.answer-btn {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    width: 100%; 
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 25px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(228, 162, 127);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.answer-btn:hover {
+    background-color: rgb(230, 132, 163);
+}
+
+.active {
+    background-color: rgb(233, 66, 119);
+}
+
 
