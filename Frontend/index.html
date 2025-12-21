@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<body>
+<body data-page="index">
 
         <!-- Logo, navn og slogan -->
 
@@ -76,13 +76,13 @@
 
         <!-- Opret bruger knap -->
 
-<button id="openSignUp" class="loginbtn1 opretbruger" onclick="document.getElementById('')">Create new account</button>
+<button id="openSignUp" class="loginbtn1 opretbruger">Create new account</button>
 
         <!-- Gæste bruger -->
 
 <p class="or"> Or try it out with a</p>
 
-<button class="loginbtn1 gæstebruger" type="button"><a href="energiniveau.html">Guest login</a></button>
+<button class="loginbtn1 gæstebruger" type="button" onclick="window.location.href='energiniveau.html'">Guest login</button>
 
 
         <!-- opret bruger modal -->
@@ -93,8 +93,6 @@
 
         <!-- Luk kryds -->
         <span class="close">&times;</span>
-
-        <!--<span onclick="document.getElementById('signupPopup').style.display='none'" title="Close modal" class="close">&times;></span>-->
 
         <form>
 
