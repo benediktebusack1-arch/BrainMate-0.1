@@ -449,9 +449,45 @@ button:active {
     background-color: rgb(233, 66, 119);
 }
 
-button.clicked:hover {
+.answer-btn.active:hover {
   background-color: rgb(233, 66, 119); /* samme som normal farve */
 }
+
+/* HOMPAGE.HTML */
+
+.hero {
+    display: flex;            /* gør indholdet side-by-side */
+    align-items: center;      /* vertikal centering */
+    gap: 20px;                /* afstand mellem logo og tekst */
+    margin-left: 250px;       /* kan justeres hvis du vil flytte det fra venstre */
+    margin-top: 50px;         /* top-margin */
+}
+
+.brain-logo {
+    height: 100px;
+    width: auto;
+}
+
+.namesettings {
+    color: rgb(233, 66, 119);
+    font-size: xx-large;
+    margin: 0;
+}
+
+.slogan {
+    color: rgb(0, 153, 255);
+    margin: 2px 0 0 0;
+    font-size: medium;
+}
+
+.texth1 { 
+    display: flex; 
+} 
+
+.textp { 
+    display: flex; 
+}
+
 
 
 

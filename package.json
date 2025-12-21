@@ -3,11 +3,11 @@
   "lockfileVersion": 3,
   "type": "module",
   "description": "BrainMate - Level up i livet, én rutine ad gangen",
-  "main": "backend/index.js",
+  "main": "backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "nodemon backend/index.js",
-    "prod-server": "node backend/index.js",
+    "dev-server": "nodemon backend/server.js",
+    "prod-server": "node backend/server.js",
     "create-db": "node db/createDb.js"
   },
   "repository": {

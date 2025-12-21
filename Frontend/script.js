@@ -94,6 +94,7 @@ function initEnergyLevel() {
                     .forEach(b => b.classList.remove("active"));
 
                 btn.classList.add("active");
+                btn.classList.remove("button-hover")
                 userAnswers[currentQuestionIndex] = answer.text;
                 nextBtn.disabled = false;
             });
@@ -112,15 +113,18 @@ function initEnergyLevel() {
     renderQuestion();
 }
 
+
+// INIT
+
 document.addEventListener("DOMContentLoaded", () => {
     const page = document.body.dataset.page;
 
-    if (page === "index") {
+    if (page == "index") {
         initLoginModals();
         initSignupModals();
     }
 
-    if (page === "energy") {
+    if (page == "energy") {
         initEnergyLevel();
     }
 });
